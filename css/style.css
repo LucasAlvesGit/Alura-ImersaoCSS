@@ -125,7 +125,7 @@ header {
 }
 
 .menu a {
-    color: #743ad5;
+    color: #b45ad3;
     display: block;
     padding: 10px;
     border-radius: 10px;
@@ -370,7 +370,7 @@ hr {
      
     .avatar img:hover,
     .avatar img:active {
-        /* border-image-source: linear-gradient(to right, #743ad5, #e6437d); */
+
         transform: scale(1.07);
         
     }
@@ -391,6 +391,7 @@ hr {
     }
     .bio p .through {
         text-decoration: line-through;
+        opacity: 0.7;
     }
     .bio p .contrast {
         color: #e6437d;
@@ -411,7 +412,7 @@ hr {
     .bio a:active,
     .copyrigth a:hover,
     .copyrigth a:active {
-        color: #a407d4;
+        color: #b45ad3;
         text-decoration: none;
        
     }
