@@ -11,9 +11,10 @@ body {
 h2, p {
     
     font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
 h2 span {
-    
+    font-weight: 400;
     color: #e6437d;
     font-size: 1.5em;
     margin-top: 0;
@@ -51,9 +52,9 @@ h2 span {
 }
 .button:hover,
 .button:active {
-    background: linear-gradient(45deg, #e46994da, rgba(163, 54, 206, 0.863) );
+    background-color: rgba(245, 245, 245, 0.281);
     border-radius: 50%;
-   color: whitesmoke;
+    color: whitesmoke;
     padding: 10px;
     
 
@@ -95,11 +96,6 @@ header {
 
 
 
-
-
-.portfolio h2 {
-    color: #eb1f66 ;
-}
 
 
 .menu {
@@ -359,14 +355,19 @@ hr {
         margin-bottom: 1em;
         text-align: left;
     }
-    .bio p span {
+    .bio p .through {
         text-decoration: line-through;
     }
+    .bio p .contrast {
+        color: #e6437d;
+        font-weight: 400;
+    }
+
     .bio a,
     .copyrigth a {
         color: #e6437d;
         font-style: italic;
-        font-weight: 900;
+        font-weight: 400;
         
     }
     
@@ -458,7 +459,7 @@ hr {
 
 .card:hover,
 .card:active {
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.281);
     box-shadow: 4px 10px 10px 0 #580b58bd; 
     border: #eb1f66 solid 4px;
     border-radius: 15px;
@@ -470,10 +471,7 @@ hr {
   
 }
 
-
-
 .img-portfolio { 
-    
     border-radius: 15px;
     height: 180px;
     object-fit: cover;
@@ -529,6 +527,7 @@ hr {
     .moldura{
         background-color: rgba(250, 250, 250, 0.541);
         border-radius: 10%;
+        box-shadow: 4px 5px 20px 10px #111111bd; 
         cursor: pointer;
         display: inline-flex;
         height: 6em;
