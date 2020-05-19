@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+h2, p {
+    
+    font-family: 'Montserrat', sans-serif;
+}
+h2 span {
+    
+    color: #e6437d;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+.airButton{
+    z-index: 1;
+    position: fixed;
+    right: 1em;
+    bottom: 3em;
+
+}
+.upPage{
+    margin-bottom: 0;
+}
+.airButton .button {
+    display: flex;
+    height: 3em;
+    margin-top: 1em;
+    transition: 1s;
+    width: 3em;
+      
+}
+
+.button a{
+ 
+    color: #e6437d;
+    font-size: 1.5em;
+    margin: auto;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+       
+}
+.button a:hover{
+    color: whitesmoke;
+    text-shadow: 0 1px 5px rgba(255, 255, 255, 0.808);
+}
+.button:hover,
+.button:active {
+    background: linear-gradient(45deg, #e46994da, rgba(163, 54, 206, 0.863) );
+    border-radius: 50%;
+   color: whitesmoke;
+    padding: 10px;
+    
+
+    
+}
+
+
+header {
+    align-items: center;
+    background-image: url('../img/fundo-code2.jpg');
+    background-color: #eb1f66;
+    background-size: 100vw 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* breakpoint*/
+@media (min-width: 300px) {
+    body {
+        font-size: 14px;
+    }
+    .menu {
+        width: 100vw;  
+    }
+   
+}
+
+@media (min-width: 650px) {
+    body {
+        font-size: 18px;
+    }  
+    .menu {
+        width: 65vw;
+         
+    }
+}
+
+
+
+
+
+.portfolio h2 {
+    color: #eb1f66 ;
+}
+
+
+.menu {
+    background-color: #f9f5ffea;
+    border-radius: 0 0 15px 15px;
+    height: 3em;
+    position: fixed;
+    
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 5px 5px rgba(68, 70, 71, 0.63)
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.2em;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;    
+    font-family: 'Righteous', cursive;
+    transition: text-shadow 1s, color 0.5s, background-color 1.5s;
+    
+}
+.menu a:active,
+.menu a:hover {
+    background-color: #e4e0eb;
+    color: #e6437d ;
+    text-shadow: 1px 1px 5px rgba(184, 198, 253, 0.822);
+    
+   
+}
+
+hr {
+    position: relative;
+    top: 0px;
+    height: 4px;
+    border: none;
+    background: linear-gradient(45deg, rgb(194, 41, 255) , rgb(110, 51, 248), rgb(75, 246, 252) );
+    width: 100%;
+
+    
+}
+
+.info {
+    position: relative;
+    /* margin-left: ; */
+}
+.site-title,
+.site-subtitle {
+    
+    color: #f9f5ff;
+    text-align: center;
+    
+}
+
+.site-title {
+    font-size: 4.5em;
+    font-family: 'Squada One', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+}
+.site-title span {
+    color: #e6437d;
+    font-size: 1.2em;
+}
+
+.site-subtitle { 
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    
+}
+    
+.typewriter-text {
+    animation: infinite typing 15s steps(30, end), blink .75s step-end infinite;
+    box-sizing: border-box;
+    border-right: 4px solid #e6437d;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1em;
+    margin: 1em auto;
+    letter-spacing: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+@media (min-width: 500px) {
+    .typewriter-text {
+        font-size: 2em;
+        width: 5em;
+    }
+}
+
+@keyframes typing {
+    0% { 
+        width: 0% 
+    }
+    25% {
+        width: 100% 
+    }
+    50% {
+        width: 100% 
+    }
+    to { 
+        width: 0% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent
+    }
+    50% { 
+        border-color: #e6437d; 
+    }
+}
+
+
+/* contato */
+
+@media (width: 360px) {
+  .photo
+
+
+    .contato .icons {
+        display: grid;
+        grid-template-columns: repeat(6, 50px);
+        gap: 20px;
+
+    }
+}
+@media (min-width: 880px) {
+    .contato .icons {
+        display: grid;
+        grid-template-columns: repeat(6, 80px);
+        justify-content: center; 
+    
+    }
+}
+
+.contato a {
+    color: rgb(240, 244, 247);
+    font-size: 3em;
+    margin: 0 0.1em;
+    text-decoration: none;
+    transition: transform 1s;
+    
+}
+.contato a:active,
+.contato a:hover {
+    color: #e6437d;
+    text-shadow: 0 0 5px #ffffffd0;
+    transform: scale(1.2);
+}
+
+
+ /* ABOUT ME */
+    @media (min-width: 1200px) {
+        .aboutme {
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    @media (min-width: 360px) {
+        .containerS {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .avatar img {
+            right: 1.5em;
+            position: relative;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+    }
+    
+    @media (min-width: 720px) {
+        .containerL {
+            margin-left: 5em;
+            margin-right: 5em;
+        }
+        .avatar img{
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        }
+    }
+    
+   
+    
+    .aboutme {
+        background-image: url('../img/fundo2.jpg');
+        background-size: 100% 100%;
+        min-height: 100vh;
+        position: relative;
+    
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2em;
+        padding-top: 1em;
+    }
+    .aboutme h2,
+    .Habilidades h2,
+    .portfolio h2 {
+        background-color: rgba(255, 22, 22, 0);
+        color: #FFF;
+        border: 3px rgb(235, 232, 232) solid;
+        font-size: 2em;
+        height: 1em;
+        text-align: center;
+        padding-top: auto;
+        padding-bottom: 2em;
+        min-width: 9em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+   
+    .avatar img{
+       
+        border: 1px solid;
+        border-image-slice: 2;
+        border-width: 6px;
+        border-color: rgba(255, 255, 255, 0.959);
+        height: 15em ;
+        float: right;
+        margin: 1em 3em;
+        transition: all 0.5s;
+        width: 15em;
+    }
+    .avatar img:hover,
+    .avatar img:active {
+        border-image-source: linear-gradient(to right, #743ad5, #e6437d);
+        transform: scale(1.07);
+        
+    }
+    
+    .bio {
+        height: auto;
+        border-radius: 15px;
+        background-color: rgba(245, 245, 245, 0.281);
+        max-width: 1200px;
+        padding: 1em 3em;
+    }
+    .bio p {
+        color: rgb(243, 242, 242);
+        font-size: 1.5em;
+        text-indent: 2em;
+        margin-bottom: 1em;
+        text-align: left;
+    }
+    .bio p span {
+        text-decoration: line-through;
+    }
+    .bio a,
+    .copyrigth a {
+        color: #e6437d;
+        font-style: italic;
+        font-weight: 900;
+        
+    }
+    
+    .bio a:hover,
+    .bio a:active,
+    .copyrigth a:hover,
+    .copyrigth a:active {
+        
+        text-decoration: none;
+    }
+
+
+
+
+/* portifolio */
+
+.portfolio {
+    background-image: url('../img/fundo.jpg');
+    background-size: 100% 100%;
+    min-height: 100vh;
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+    justify-content: center;
+}
+
+
+
+
+@media (min-width: 560px) {
+    
+    .portfolio .grid {
+        grid-template-columns: 240px 240px;
+    }
+}
+
+@media (min-width: 880px) {
+    .portfolio .grid {
+        grid-template-columns: 240px 240px 240px;
+        justify-content: center;
+        height: calc(100vh - 8em - 48px);
+         
+    }
+}
+@media (min-width: 1200px) {
+
+    .img-portfolio {
+        height: auto;
+        width: 100%;
+        
+    }
+}
+.portfolio figcaption {
+    text-align: center;
+    
+}
+
+.card {
+    opacity: 0.8;
+    
+    width: 14em;
+    color: #ffffff00;
+    transition: all 1s ease-in-out;
+    min-height: 220px; 
+
+}
+
+.card i {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    opacity: 0.3;
+    transition: ease-in all 0.2s;
+    color: #eb1f66;
+    
+}
+.card i:hover,
+.card i:active {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.card:hover,
+.card:active {
+    background-color: whitesmoke;
+    box-shadow: 4px 10px 10px 0 #580b58bd; 
+    border: #eb1f66 solid 4px;
+    border-radius: 15px;
+    color: #eb1f66;
+    transform: perspective(1s), translateY(-10px) ;
+    opacity: 1;
+    z-index: 1;
+    
+  
+}
+
+
+
+.img-portfolio { 
+    
+    border-radius: 15px;
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+    
+    
+   
+}
+.portfolio figure {
+    transition: transform 0.5s;
+    position: relative;
+}
+
+.portfolio .card:hover,
+.portfolio .card:active {
+    transform: scale(1.2);
+    
+}
+
+.portfolio figcaption {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-family: 'Lato', cursive;
+    
+}
+
+
+
+
+
+
+/* habilidades  */
+
+.Habilidades {
+    background-image: url('../img/fundo2.jpg');
+    background-size: 100vw 100vh;
+    min-height: 70vh;
+}
+
+@media (min-width: 720px) {
+    .Habilidades {
+        height: 70vh;
+    }
+}
+
+    .grid-skills {
+        height: 100px;
+        width: 80vw;
+        margin-left: 10vw;
+
+        text-align: center;
+    }
+    .moldura{
+        background-color: rgba(250, 250, 250, 0.541);
+        border-radius: 10%;
+        cursor: pointer;
+        display: inline-flex;
+        height: 6em;
+        margin: 1em;
+        opacity: 0.9;
+        position: relative;
+        transition: all ease-in-out 0.5s;
+        width: 6em;
+        
+    }
+
+    .moldura figure {
+        margin: auto;
+    }
+
+    .moldura figure img{
+        height: 4em;
+        width: auto;
+    }
+    .Habilidades .moldura:hover {
+        opacity: 1;
+        border: 2px #e6437d solid;
+        transform: translateY(-20px); 
+        box-shadow: 4px 10px 10px 0 #580b58bd; 
+        background-color: rgba(240, 255, 255, 0.959);
+    }
+    .Habilidades .moldura:active {
+        transform: scale(0.9);
+    }
+
+
+footer {
+    background-color: #eee7f7;
+    
+    
+}
+
+    footer .copyrigth {
+        height: 5vh;
+        background-color: #d8d6db;
+        
+        text-align: center;
+        padding-top: 0.3em;
+        font-family: 'Lato', cursive;
+        
+    }
+    
