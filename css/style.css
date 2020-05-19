@@ -18,7 +18,12 @@ h2 span {
     color: #e6437d;
     font-size: 1.5em;
     margin-top: 0;
+    transition: all 0.5s;
+
 }
+
+
+
 .airButton{
     z-index: 1;
     position: fixed;
@@ -120,20 +125,20 @@ header {
 }
 
 .menu a {
+    color: #743ad5;
     display: block;
     padding: 10px;
     border-radius: 10px;
-    text-decoration: none;    
+    text-decoration: none;  
     font-family: 'Righteous', cursive;
     transition: text-shadow 1s, color 0.5s, background-color 1.5s;
     
 }
 .menu a:active,
 .menu a:hover {
-    background-color: #e4e0eb;
     color: #e6437d ;
+    background-color: rgba(206, 203, 203, 0.815);
     text-shadow: 1px 1px 5px rgba(184, 198, 253, 0.822);
-    
    
 }
 
@@ -150,11 +155,10 @@ hr {
 
 .info {
     position: relative;
-    /* margin-left: ; */
+    
 }
 .site-title,
-.site-subtitle {
-    
+.site-subtitle { 
     color: #f9f5ff;
     text-align: center;
     
@@ -164,12 +168,15 @@ hr {
     font-size: 4.5em;
     font-family: 'Squada One', cursive;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    overflow: hidden;
     
 }
 .site-title span {
     color: #e6437d;
     font-size: 1.2em;
 }
+
+
 
 .site-subtitle { 
     font-style: italic;
@@ -194,21 +201,28 @@ hr {
     .typewriter-text {
         font-size: 2em;
         width: 5em;
+        
     }
 }
+
+
+
+
 
 @keyframes typing {
     0% { 
         width: 0% 
     }
-    25% {
-        width: 100% 
-    }
     50% {
         width: 100% 
     }
-    to { 
-        width: 0% 
+    
+    75% { 
+        width: 100% 
+    }
+
+    100% { 
+    width: 0% 
     }
 }
 
@@ -327,16 +341,36 @@ hr {
         border: 1px solid;
         border-image-slice: 2;
         border-width: 6px;
-        border-color: rgba(255, 255, 255, 0.959);
+
         height: 15em ;
         float: right;
         margin: 1em 3em;
         transition: all 0.5s;
         width: 15em;
+        border-image-source: linear-gradient(to right, #743ad5, #e6437d);
+        animation: reveal 5000ms infinite;
+
     }
+    @keyframes reveal {
+        0%{
+            transform: scale(0.9);
+            
+          
+          
+        }
+        50% {
+          transform: scale(1);
+          
+        }
+        100%{
+            transform: scale(0.9);
+            
+          }
+      }
+     
     .avatar img:hover,
     .avatar img:active {
-        border-image-source: linear-gradient(to right, #743ad5, #e6437d);
+        /* border-image-source: linear-gradient(to right, #743ad5, #e6437d); */
         transform: scale(1.07);
         
     }
@@ -368,6 +402,8 @@ hr {
         color: #e6437d;
         font-style: italic;
         font-weight: 400;
+        transition: all 0.5s ease;
+       
         
     }
     
@@ -375,8 +411,9 @@ hr {
     .bio a:active,
     .copyrigth a:hover,
     .copyrigth a:active {
-        
+        color: #a407d4;
         text-decoration: none;
+       
     }
 
 
@@ -446,7 +483,7 @@ hr {
     position: absolute;
     right: 0.5em;
     top: 0.5em;
-    opacity: 0.3;
+    opacity: 0.7;
     transition: ease-in all 0.2s;
     color: #eb1f66;
     
@@ -455,6 +492,7 @@ hr {
 .card i:active {
     transform: scale(1.2);
     opacity: 1;
+    
 }
 
 .card:hover,
