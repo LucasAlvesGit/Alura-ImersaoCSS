@@ -25,7 +25,6 @@
     }
 }
 
-
 h2, p, figcaption {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
@@ -80,8 +79,8 @@ h2 span {
 
 .anime {
     opacity: 0;
-    transform: translate3d(-100px, 0, 0);
-    transition: 0.3s;
+    transform: translate3d(-50px, 0, 0);
+    transition: 0.8s;
 }
 
 .anime-start {
@@ -92,7 +91,6 @@ h2 span {
 header {
     align-items: center;
     background-image: url('../img/fundo-code2.jpg');
-    background-color: #eb1f66;
     background-size: 100vw 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -406,7 +404,7 @@ hr {
     .bio a:active,
     .copyrigth a:hover,
     .copyrigth a:active {
-        color: #b45ad3;
+        color: #6e0a8f;
         text-decoration: none;
        
     }
@@ -457,7 +455,6 @@ hr {
     border-color: #ffffff00;
     border-left: 8px;
     border-radius: 15px;
-    cursor: pointer;
     width: 15em;
     height: 10em;
     opacity: 0.7;
@@ -576,9 +573,7 @@ hr {
     transform: scale(0.9);
 }
 
-
-
-.progressBar {
+/* .progressBar {
     margin-top: 4em;
     margin-left: auto;
     margin-right: auto;
@@ -597,9 +592,7 @@ hr {
     background-color: #e6437d;
     border-radius: 2px; 
 
-}
-
-
+} */
 
 footer .copyrigth {
     background-color: #e2e2e2;

@@ -50,6 +50,5 @@ animeScroll();
 
 $(document).scroll(debounce(function(){
     animeScroll();
-    console.log('teste');
-}, 100));
+}, 90));
 }());
